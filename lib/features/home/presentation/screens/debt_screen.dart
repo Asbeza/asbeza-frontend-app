@@ -4,10 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../../../core/constants/colors.dart';
-import '../widgets/custom_list_tile.dart';
 import '../widgets/greeting_text_widget.dart';
 import '../widgets/custom_rectangular_card.dart';
-import '../widgets/obscure_text_widget.dart';
 import '../../../../core/constants/data_variables.dart';
 
 class DebtScreen extends StatefulWidget {
