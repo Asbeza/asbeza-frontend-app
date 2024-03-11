@@ -1,0 +1,30 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Or a different runner
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Install Flutter
+      - uses: flutter/flutter-actions@v3
+        with:
+          channel: stable  # Or beta, dev channel
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      # Analyze code (optional)
+      - name: Analyze project source
+        run: flutter analyze
+
+      # Run tests
+      - name: Run tests
+        run: flutter test
