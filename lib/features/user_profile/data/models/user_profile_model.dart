@@ -1,7 +1,4 @@
-import 'package:asbeza/features/home/data/models/transaction_model.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-
-import '../../domain/entities/user_profile.dart';
+import 'package:asbeza/asbeza.dart';
 
 class UserProfileModel extends UserProfile {
   final String id;
@@ -11,6 +8,8 @@ class UserProfileModel extends UserProfile {
     required super.totalBalance,
     required super.income,
     required super.expenses,
+    required super.debt,
+    required super.credit,
     required super.transactions,
   });
 
@@ -24,6 +23,8 @@ class UserProfileModel extends UserProfile {
       totalBalance: data['totalBalance'].toDouble(),
       income: data['income'].toDouble(),
       expenses: data['expenses'].toDouble(),
+      debt: data['debt'].toDouble(),
+      credit: data['credit'].toDouble(),
       transactions: transactions,
     );
   }
@@ -34,6 +35,8 @@ class UserProfileModel extends UserProfile {
       'income': income,
       'expenses': expenses,
       'transactions': transactions,
+      'debt': debt,
+      'credit': credit,
     };
   }
 }

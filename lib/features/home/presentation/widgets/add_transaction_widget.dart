@@ -1,12 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-
-import '../../../../core/common_widgets/text_input_decoration.dart';
-import '../../../../core/constants/colors.dart';
-import '../../../../core/constants/styles.dart';
+import 'package:asbeza/asbeza.dart';
 
 class AddTransaction extends StatefulWidget {
-  AddTransaction({
+  const AddTransaction({
     super.key,
     required GlobalKey<FormState> formKey,
   }) : _formKey = formKey;

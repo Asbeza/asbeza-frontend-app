@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:shimmer/shimmer.dart';
-
-import '../../../../../core/constants/colors.dart';
-import '../greeting_text_widget.dart';
-import '../main_background_widget.dart';
-import 'shimmers.dart';
+import 'package:asbeza/asbeza.dart';
 
 class ShimmerLoading extends StatelessWidget {
   const ShimmerLoading({super.key});
